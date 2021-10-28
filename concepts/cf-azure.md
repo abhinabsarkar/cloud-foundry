@@ -19,9 +19,11 @@ Then you can find your public key in `~/.ssh/id_rsa.pub`, and your private key i
 ### 3 Deploy BOSH and Cloud Foundry
 This template can help you setup the development environment to deploy BOSH and Cloud Foundry on Azure.
 
-* [Deploy BOSH on Azure via ARM templates](https://github.com/cloudfoundry/bosh-azure-cpi-release/blob/a5a3f6c3d0c773aa274fe96f2e5fee4ecf3d7b00/docs/get-started/via-arm-templates/deploy-bosh-via-arm-templates.md)
+[![Deploy To Azure](https://raw.githubusercontent.com/abhinabsarkar/cloud-foundry/main/images/deploytoazure.png?sanitize=true)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fapplication-workloads%2Fbosh%2Fbosh-setup%2Fazuredeploy.json)  [![Visualize](https://raw.githubusercontent.com/abhinabsarkar/cloud-foundry/main/images/visualizebutton.png?sanitize=true)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fabhinabsarkar%2Fcloud-foundry%2Fmain%2Fsrc%2Fbosh-setup%2Fazuredeploy.json)
 
-> This guidance is for the `version v2.7.0` of [bosh-setup template](https://github.com/Azure/azure-quickstart-templates/tree/137cb18522ae28175f9e96715f93104d113b338f/bosh-setup). The v2.7.0 is based on cf-release.
+This template can help you setup the development environment to deploy [BOSH](http://bosh.io/) and [Cloud Foundry](https://www.cloudfoundry.org/) on Azure Cloud, Azure China Cloud, Azure Germany Cloud, Azure USGovernment Cloud and Azure Stack.
+
+You can follow the guide [**HERE**](https://github.com/cloudfoundry-incubator/bosh-azure-cpi-release/blob/master/docs/guidance.md) to deploy Cloud Foundry on Azure.
 
 The template will create the following Azure resources that’s required for deploying BOSH and Cloud Foundry:
 

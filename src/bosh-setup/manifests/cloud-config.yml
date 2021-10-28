@@ -11,7 +11,7 @@ compilation:
   vm_type: compilation
   vm_extensions:
   - 100GB_ephemeral_disk
-  workers: 6
+  workers: 2
 
 disk_types:
 - name: default

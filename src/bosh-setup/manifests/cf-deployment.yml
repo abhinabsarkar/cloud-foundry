@@ -232,8 +232,7 @@ instance_groups:
 - name: nats
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   stemcell: default
   networks:
@@ -250,8 +249,7 @@ instance_groups:
 - name: adapter
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   stemcell: default
   networks:
@@ -340,8 +338,7 @@ instance_groups:
   - name: diego-bbs
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: small
   stemcell: default
   update:
@@ -444,8 +441,7 @@ instance_groups:
 - name: uaa
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   stemcell: default
   networks:
@@ -652,8 +648,7 @@ instance_groups:
 - name: api
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: small
   vm_extensions:
   - 50GB_ephemeral_disk
@@ -919,7 +914,6 @@ instance_groups:
 - name: cc-worker
   azs:
   - z1
-  - z2
   instances: 2
   vm_type: minimal
   stemcell: default
@@ -957,8 +951,7 @@ instance_groups:
 - name: router
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   vm_extensions:
   - cf-router-network-properties
@@ -1001,8 +994,7 @@ instance_groups:
 - name: tcp-router
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   stemcell: default
   vm_extensions:
@@ -1022,8 +1014,7 @@ instance_groups:
 - name: scheduler
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   migrated_from:
   - {name: cc-bridge}
   - {name: cc-clock}
@@ -1168,8 +1159,7 @@ instance_groups:
 - name: doppler
   azs:
   - z1
-  - z2
-  instances: 4
+  instances: 1
   vm_type: minimal
   stemcell: default
   networks:
@@ -1332,7 +1322,6 @@ instance_groups:
 - name: diego-cell
   azs:
   - z1
-  - z2
   instances: 2
   vm_type: small-highmem
   vm_extensions:
@@ -1458,8 +1447,7 @@ instance_groups:
 - name: log-api
   azs:
   - z1
-  - z2
-  instances: 2
+  instances: 1
   vm_type: minimal
   stemcell: default
   update:
@@ -1548,8 +1536,8 @@ instance_groups:
           - log-stream.((system_domain))
           - "*.log-stream.((system_domain))"
 - name: credhub
-  azs: [z1, z2]
-  instances: 2
+  azs: [z1]
+  instances: 1
   networks:
   - name: default
   stemcell: default
