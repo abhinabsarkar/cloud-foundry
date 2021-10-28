@@ -2,7 +2,6 @@
 
 function retryop()
 {
-  set +e
   retry=0
   max_retries=1
   interval=3
@@ -22,5 +21,4 @@ function retryop()
     echo "Operation failed: $1"
     exit 1
   fi
-  set -e
 }
