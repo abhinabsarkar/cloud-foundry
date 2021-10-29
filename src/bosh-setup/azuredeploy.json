@@ -201,7 +201,7 @@
     },    
     "autoDeployCloudFoundry": {
       "type": "string",
-      "defaultValue": "disabled",
+      "defaultValue": "enabled",
       "allowedValues": [
         "enabled",
         "disabled"
