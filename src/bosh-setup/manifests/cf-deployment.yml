@@ -281,7 +281,7 @@ instance_groups:
   - z1
   persistent_disk_type: 10GB
   instances: 1
-  vm_type: small
+  vm_type: minimal
   stemcell: default
   update:
     serial: true
@@ -339,7 +339,7 @@ instance_groups:
   azs:
   - z1
   instances: 1
-  vm_type: small
+  vm_type: minimal
   stemcell: default
   update:
     serial: true
