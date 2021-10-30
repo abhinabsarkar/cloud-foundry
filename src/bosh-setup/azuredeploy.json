@@ -282,7 +282,7 @@
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-compiled-releases.yml', parameters('_artifactsLocationSasToken')))]",
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-external-blobstore.yml', parameters('_artifactsLocationSasToken')))]",
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-azure-storage-blobstore.yml', parameters('_artifactsLocationSasToken')))]",
-      "https://packages.cloudfoundry.org/stable?release=debian64&version=8.0.0&source=github-rel"
+      "https://s3-us-west-1.amazonaws.com/cf-cli-releases/releases/v6.53.0/cf-cli-installer_6.53.0_x86-64.deb"
     ],
     "filesToDownloadMisc": [
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-managed-disks.yml', parameters('_artifactsLocationSasToken')))]",
