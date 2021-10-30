@@ -282,7 +282,7 @@
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-compiled-releases.yml', parameters('_artifactsLocationSasToken')))]",
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-external-blobstore.yml', parameters('_artifactsLocationSasToken')))]",
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-azure-storage-blobstore.yml', parameters('_artifactsLocationSasToken')))]",
-      "https://s3-us-west-1.amazonaws.com/cf-cli-releases/releases/v6.39.0/cf-cli-installer_6.39.0_x86-64.deb"
+      "https://packages.cloudfoundry.org/stable?release=debian64&version=8.0.0&source=github-rel"
     ],
     "filesToDownloadMisc": [
       "[uri(variables('baseUriAzureCloud'), concat('manifests/use-managed-disks.yml', parameters('_artifactsLocationSasToken')))]",
@@ -336,13 +336,13 @@
         "AzureStack": "[parameters('azureStackDomain')]"
     },
     "coreUri": "[variables('coreUrisByCloud')[parameters('environment')]]",
-    "stemcellUrlAzure": "https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=170.3",
-    "stemcellSha1Azure": "1417d0a7bdbfc2b4794a4c8799231f0eeec73325",
+    "stemcellUrlAzure": "https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=621.125",
+    "stemcellSha1Azure": "b05d331dc762214388d6e7196bc235e9ac2e0b0a",
     "environmentAzure": {
       "serviceHostBase": "[variables('coreUri')]",
-      "boshCliUrl": "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-5.2.2-linux-amd64",
-      "boshAzureCPIReleaseUrl": "https://bosh.io/d/github.com/cloudfoundry/bosh-azure-cpi-release?v=35.5.0",
-      "boshAzureCPIReleaseSha1": "faebe370c143554fe471c3f6aafb523ab48c43ea",
+      "boshCliUrl": "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-6.4.0-linux-amd64",
+      "boshAzureCPIReleaseUrl": "https://bosh.io/d/github.com/cloudfoundry/bosh-azure-cpi-release?v=37.6.0",
+      "boshAzureCPIReleaseSha1": "d0546e6a516ee1cff077b44f3db12386a8a2f439",
       "stemcellUrl": "[variables('stemcellUrlAzure')]",
       "stemcellSha1": "[variables('stemcellSha1Azure')]"
     },
@@ -353,8 +353,8 @@
         "AzureStack": "[variables('environmentAzure')]",
         "AzureChinaCloud": {
             "serviceHostBase": "[variables('coreUri')]",
-            "boshCliUrl": "[uri(variables('baseUriAzureChinaCloud'), 'bosh-cli/bosh-cli-5.2.2-linux-amd64')]",
-            "boshAzureCPIReleaseUrl": "https://cloudfoundry.blob.core.chinacloudapi.cn/bosh-setup/cpi-releases/bosh-azure-cpi-release-35.5.0.tgz",
+            "boshCliUrl": "[uri(variables('baseUriAzureChinaCloud'), 'bosh-cli/bosh-cli-6.4.0-linux-amd64')]",
+            "boshAzureCPIReleaseUrl": "https://cloudfoundry.blob.core.chinacloudapi.cn/bosh-setup/cpi-releases/bosh-azure-cpi-release-37.6.0.tgz",
             "boshAzureCPIReleaseSha1": "faebe370c143554fe471c3f6aafb523ab48c43ea",
             "stemcellUrl": "[variables('stemcellUrlAzureChina')]",
             "stemcellSha1": "[variables('stemcellSha1AzureChina')]"
