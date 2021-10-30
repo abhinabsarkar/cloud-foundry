@@ -336,8 +336,8 @@
         "AzureStack": "[parameters('azureStackDomain')]"
     },
     "coreUri": "[variables('coreUrisByCloud')[parameters('environment')]]",
-    "stemcellUrlAzure": "https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=621.125",
-    "stemcellSha1Azure": "b05d331dc762214388d6e7196bc235e9ac2e0b0a",
+    "stemcellUrlAzure": "https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=170.3",
+    "stemcellSha1Azure": "1417d0a7bdbfc2b4794a4c8799231f0eeec73325",
     "environmentAzure": {
       "serviceHostBase": "[variables('coreUri')]",
       "boshCliUrl": "https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-6.4.0-linux-amd64",
